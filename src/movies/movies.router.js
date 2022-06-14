@@ -1,10 +1,16 @@
+const router = require("express").Router()
+const controller = require("./movies.controller")
+const methodNotAllowed = require("../errors/methodNotAllowed")
 
 
-function moviesRouter(){
+
+router.route("/movies").get(controller.list).all(methodNotAllowed);
 
 
 
-}
 
 
-export default moviesRouter
+
+
+
+module.exports = router

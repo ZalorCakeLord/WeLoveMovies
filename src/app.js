@@ -3,9 +3,9 @@ const express = require("express");
 const app = express();
 const cors = require('cors')
 const knex = require("knex")
-const moviesRouter = require("./movies/moviesRouter");
-const theatersRouter = require("./theaters/theatersRouter");
-const reviewsRouter = require("./reviews/reviewsRouter");
+const moviesRouter = require("./movies/movies.router");
+const theatersRouter = require("./theaters/theaters.router");
+const reviewsRouter = require("./reviews/reviews.router");
 
 //middleware
 app.use(express.json())
@@ -13,8 +13,6 @@ app.use(cors())
 
 //routing
 app.use("/movies", moviesRouter)
-app.use("/theaters", theatersRouter)
-app.use("/reviews", reviewsRouter)
 
 
 
