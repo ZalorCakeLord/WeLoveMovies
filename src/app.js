@@ -14,7 +14,7 @@ app.use(express.json())
 
 //routing
 app.use("/movies", moviesRouter);
-// app.use("/theaters", theatersRouter);
+app.use("/theaters", theatersRouter);
 app.use("/reviews", reviewsRouter);
 
 

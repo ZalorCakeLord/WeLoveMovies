@@ -1,5 +1,5 @@
 //Language: javascript
-
+const services = require("./theaters.services");
 const knex = require("../db/connection");
 
 // Path: Projects\Project-_WeLoveMovies-_Qualified-Robert_Chavana-Solution\src\theaters\theaters.router.js
