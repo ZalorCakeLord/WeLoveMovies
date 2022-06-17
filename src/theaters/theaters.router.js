@@ -7,4 +7,8 @@ const methodNotAllowed = require("../errors/methodNotAllowed")
 
 
 
+router.get("/", controller.list).all(methodNotAllowed);
 
+
+
+module.exports = {router};
